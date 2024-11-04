@@ -27,9 +27,13 @@ set_option pp.rawOnError true
 _CAUTION:_ This is an **Unofficial** translation by volunteers.
 The latest version of original is [here](https://lean-lang.org/doc/reference/latest/).
 
+:::comment
 This is the _Lean Language Reference_, an in-progress reference work on Lean.
 It is intended to be a comprehensive, precise description of Lean: a reference work in which Lean users can look up detailed information, rather than a tutorial for new users.
 For other documentation, please refer to the [Lean documentation site](https://lean-lang.org/documentation/).
+:::
+
+本書は **Lean 言語リファレンス** であり、Lean に関する執筆中のリファレンスです。本書は Lean についての包括的で正確な説明であることを意図しています：Lean のユーザが詳細な情報を調べることができる参考文献であって、新しいユーザのためのチュートリアルではありません。その他の文書については [Lean のドキュメントサイト](https://lean-lang.org/documentation/) を参照してください。
 
 {include Manual.Intro}
 
