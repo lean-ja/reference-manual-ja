@@ -29,7 +29,7 @@ set_option linter.unusedVariables false
 # The Type System
 
 {deftech}_Terms_, also known as {deftech}_expressions_, are the fundamental units of meaning in Lean's core language.
-They are produced from user-written syntax by the {tech}[elaborator].
+They are produced from user-written syntax by the {tech}[エラボレータ].elaborator
 Lean's type system relates terms to their _types_, which are also themselves terms.
 Types can be thought of as denoting sets, while terms denote individual elements of these sets.
 A term is {deftech}_well-typed_ if it has a type under the rules of Lean's type theory.
@@ -567,7 +567,7 @@ The following commands in Lean are definition-like: {TODO}[Render commands as th
  * {syntaxKind}`example`
  * {syntaxKind}`theorem`
 
-All of these commands cause Lean to {tech key:="elaborator"}[elaborate] a term based on a signature.
+All of these commands cause Lean to {tech key:="エラボレータ"}[elaborate]elaborator a term based on a signature.
 With the exception of {syntaxKind}`example`, which discards the result, the resulting expression in Lean's core language is saved for future use in the environment.
 
 :::syntax Lean.Parser.Command.declaration
