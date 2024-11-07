@@ -29,14 +29,14 @@ set_option linter.unusedVariables false
 # The Type System
 
 {deftech}_Terms_, also known as {deftech}_expressions_, are the fundamental units of meaning in Lean's core language.
-They are produced from user-written syntax by the {tech}[elaborator].
+They are produced from user-written syntax by the {tech}[エラボレータ].elaborator
 Lean's type system relates terms to their _types_, which are also themselves terms.
 Types can be thought of as denoting sets, while terms denote individual elements of these sets.
 A term is {deftech}_well-typed_ if it has a type under the rules of Lean's type theory.
 Only well-typed terms have a meaning.
 
 Terms are a dependently typed λ-calculus: they include function abstraction, application, variables, and `let`-bindings.
-In addition to bound variables, variables in the term language may refer to {tech}[constructors], {tech}[type constructors], {tech}[recursors], {deftech}[defined constants], or opaque constants.
+In addition to bound variables, variables in the term language may refer to {tech}[constructors], {tech}[type constructors], {tech}[再帰子]recursors, {deftech}[defined constants], or opaque constants.
 Constructors, type constructors, recursors, and opaque constants are not subject to substitution, while defined constants may be replaced with their definitions.
 
 A {deftech}_derivation_ demonstrates the well-typedness of a term by explicitly indicating the precise inference rules that are used.
