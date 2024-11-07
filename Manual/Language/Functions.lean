@@ -122,7 +122,7 @@ fun $x:ident : term => $t
 :::
 
 Function definitions defined with keywords such as {keywordOf Lean.Parser.Command.declaration parser:=Lean.Parser.Command.definition}`def` desugar to {keywordOf Lean.Parser.Term.fun}`fun`.
-However, not all functions originate from abstractions: {tech}[type constructors], {tech}[constructors], and {tech}[再帰子]recursors may have function types, but they cannot be defined using function abstractions alone.
+However, not all functions originate from abstractions: {tech}[type constructors], {tech}[constructors], and {tech}[recursors] may have function types, but they cannot be defined using function abstractions alone.
 
 # Currying
 

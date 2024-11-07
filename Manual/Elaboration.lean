@@ -141,7 +141,7 @@ Parsers are highly extensible: users may define new syntax in any command, and t
 The open namespaces in the current {tech}[scope] also influences which parsing rules are used, because parser extensions may be set to be active only when a given namespace is open.
 :::
 
-Lean のパーサは再帰下降パーサであり、Pratt パーサ {citep pratt73}[] に基づく動的テーブルを使用して、演算子の優先順位と結合性を解決します。文法が曖昧でない場合、パーサはバックトラックする必要がありません；曖昧な文法の場合、パックラットパースで使用されるものと同様のメモ化テーブルによって指数関数的な爆発を避けます。Lean のパーサは非常に拡張性が高いです：ユーザはどのコマンドでも新しい構文を定義でき、その構文は次のコマンドで使用できるようになります。現在の {tech}[スコープ] で開いている名前空間も、どのパース規則を使用するかに影響します。なぜなら、パーサの拡張機能は指定した名前空間が開いているときにのみ有効になるように設定できるからです。
+Lean のパーサは再帰下降パーサであり、Pratt パーサ {citep pratt73}[] に基づく動的テーブルを使用して、演算子の優先順位と結合性を解決します。文法が曖昧でない場合、パーサはバックトラックする必要がありません；曖昧な文法の場合、パックラットパースで使用されるものと同様のメモ化テーブルによって指数関数的な爆発を避けます。Lean のパーサは非常に拡張性が高いです：ユーザはどのコマンドでも新しい構文を定義でき、その構文は次のコマンドで使用できるようになります。現在の {tech}[scope] で開いている名前空間も、どのパース規則を使用するかに影響します。なぜなら、パーサの拡張機能は指定した名前空間が開いているときにのみ有効になるように設定できるからです。
 
 :::comment
 When ambiguity is encountered, the longest matching parse is selected.
@@ -210,7 +210,7 @@ Term elaboration may modify all of these fields except the open scopes.
 Additionally, it has access to all the machinery needed to create fully-explicit terms in the core language from Lean's terse, friendly syntax, including unification, type class instance synthesis, and type checking.
 :::
 
-コマンドエラボレーションと項エラボレーションは異なる能力を持ちます。コマンドエラボレーションは環境に副作用を与える可能性があり、 {lean}`IO` で任意の計算を実行するアクセス権を持っています。Lean の環境は名前から定義への通常のマッピングに加え、 {deftech}[環境拡張] （environment extension）で定義される追加データを含んでいます；環境拡張は {tactic}`simp` 補題・カスタムのプリティプリンタ・コンパイラの中間表現などの内部を含む、Lean コードに関する他のほとんどの情報を追跡するために使用されます。コマンドエラボレーションはまた、コンパイラの情報出力・警告・およびエラー内容を含むメッセージログ・メタデータをもとの構文に関連付ける {tech}[情報木] のあつまり（証明状態の表示・識別子の補完・ドキュメントの表示などの対話的な機能に使用されます）・蓄積されたデバッグトレース・開いた {tech}[スコープ] ・マクロ展開に関連するいくつかの内部状態を維持します。項エラボレーションは開いたスコープを除くこれらすべてのフィールドを変更することができます。さらに、Lean の簡潔で親しみやすい構文からコア言語で完全に明示的な項を作成するために必要な単一化・型クラスインスタンス合成・型チェックを含むすべての機構にアクセスすることができます。
+コマンドエラボレーションと項エラボレーションは異なる能力を持ちます。コマンドエラボレーションは環境に副作用を与える可能性があり、 {lean}`IO` で任意の計算を実行するアクセス権を持っています。Lean の環境は名前から定義への通常のマッピングに加え、 {deftech}[環境拡張] （environment extension）で定義される追加データを含んでいます；環境拡張は {tactic}`simp` 補題・カスタムのプリティプリンタ・コンパイラの中間表現などの内部を含む、Lean コードに関する他のほとんどの情報を追跡するために使用されます。コマンドエラボレーションはまた、コンパイラの情報出力・警告・およびエラー内容を含むメッセージログ・メタデータをもとの構文に関連付ける {tech}[情報木] のあつまり（証明状態の表示・識別子の補完・ドキュメントの表示などの対話的な機能に使用されます）・蓄積されたデバッグトレース・開いた {tech}[scope] ・マクロ展開に関連するいくつかの内部状態を維持します。項エラボレーションは開いたスコープを除くこれらすべてのフィールドを変更することができます。さらに、Lean の簡潔で親しみやすい構文からコア言語で完全に明示的な項を作成するために必要な単一化・型クラスインスタンス合成・型チェックを含むすべての機構にアクセスすることができます。
 
 :::comment
 The first step in both term and command elaboration is macro expansion.
@@ -311,7 +311,7 @@ The language implemented by the kernel is a version of the Calculus of Construct
 カーネルが実装する言語は Calculus of Constructions の一種で、以下の特徴を持つ依存型理論です：
 + 完全な依存型
 + 相互に帰納的であったり、他の帰納的データ型の下で入れ子になった再帰を含んだりする帰納的に定義されたデータ型
-+ {tech}[impredicative] ・定義上証明とは無関係な {tech}[命題] （proposition）の拡張的 {tech}[宇宙] （universe）
++ {tech}[impredicative] ・定義上証明とは無関係な {tech}[propositions] の拡張的 {tech}[universe]
 + {tech}[predicative] なデータの宇宙の非蓄積な階層
 * 定義上の計算規則を伴った {ref "quotients"}[商型] （Quotient type）
 + 命題上の関数外延性 {margin}[関数外延性は商型を使って証明できる定理ですが、重要な帰結であるため別で挙げておきます。]
@@ -371,7 +371,7 @@ Thus, the elaborator must translate definitions that use pattern matching and re
 This translation is additionally a proof that the function terminates for all potential arguments, because all functions that can be translated to recursors also terminate.
 :::
 
-Lean のコア型理論には、パターンマッチや再帰定義は含まれていません。その代わりに、場合分けとプリミティブな再帰の両方を実装するために使用できる低レベルの {tech}[再帰子] （recursor）を提供します。したがって、エラボレータはパターンマッチと再帰を使用する定義から再帰子を使用する定義に変換する必要があります。この変換はさらに、関数がすべての潜在的な引数に対して停止することの証明でもあります。なぜなら再帰子へ翻訳されるすべての関数は停止するからです。
+Lean のコア型理論には、パターンマッチや再帰定義は含まれていません。その代わりに、場合分けとプリミティブな再帰の両方を実装するために使用できる低レベルの {tech}[recursors] を提供します。したがって、エラボレータはパターンマッチと再帰を使用する定義から再帰子を使用する定義に変換する必要があります。この変換はさらに、関数がすべての潜在的な引数に対して停止することの証明でもあります。なぜなら再帰子へ翻訳されるすべての関数は停止するからです。
 
 :::comment
 The translation to recursors happens in two phases: during term elaboration, uses of pattern matching are replaced by appeals to auxiliary functions that implement the particular case distinction that occurs in the code.

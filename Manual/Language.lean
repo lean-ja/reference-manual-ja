@@ -36,7 +36,7 @@ A term is {deftech}_well-typed_ if it has a type under the rules of Lean's type 
 Only well-typed terms have a meaning.
 
 Terms are a dependently typed λ-calculus: they include function abstraction, application, variables, and `let`-bindings.
-In addition to bound variables, variables in the term language may refer to {tech}[constructors], {tech}[type constructors], {tech}[再帰子]recursors, {deftech}[defined constants], or opaque constants.
+In addition to bound variables, variables in the term language may refer to {tech}[constructors], {tech}[type constructors], {tech}[recursors], {deftech}[defined constants], or opaque constants.
 Constructors, type constructors, recursors, and opaque constants are not subject to substitution, while defined constants may be replaced with their definitions.
 
 A {deftech}_derivation_ demonstrates the well-typedness of a term by explicitly indicating the precise inference rules that are used.
@@ -567,7 +567,7 @@ The following commands in Lean are definition-like: {TODO}[Render commands as th
  * {syntaxKind}`example`
  * {syntaxKind}`theorem`
 
-All of these commands cause Lean to {tech key:="elaborator"}[elaborate] a term based on a signature.
+All of these commands cause Lean to {tech key:="エラボレータ"}[elaborate]elaborator a term based on a signature.
 With the exception of {syntaxKind}`example`, which discards the result, the resulting expression in Lean's core language is saved for future use in the environment.
 
 :::syntax Lean.Parser.Command.declaration
