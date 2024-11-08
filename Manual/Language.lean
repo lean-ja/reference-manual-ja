@@ -131,7 +131,7 @@ but is expected to have type
 :::
 ::::
 
-The basic types in Lean are {tech}[universes], {tech}[function] types, and {tech}[type constructors] of {tech}[inductive types].
+The basic types in Lean are {tech}[universes], {tech}[関数]function types, and {tech}[type constructors] of {tech}[inductive types].
 {tech}[Defined constants], applications of {tech}[recursors], function application, {tech}[axioms] or {tech}[opaque constants] may additionally give types, just as they can give rise to terms in any other type.
 
 
