@@ -17,14 +17,14 @@ set_option maxRecDepth 800
 
 # Recursors
 
-Every inductive type is equipped with a {tech}[recursor].
+Every inductive type is equipped with a {tech}[再帰子]recursors.
 The recursor is completely determined by the signatures of the type constructor and the constructors.
 Recursors have function types, but they are primitive and are not definable using `fun`.
 
 ## Recursor Types
 
 The recursor takes the following parameters:
-: The inductive type's {tech}[parameters]
+: The inductive type's {tech}[パラメータ]parameters
 
   Because parameters are consistent, they can be abstracted over the entire recursor
 

@@ -36,7 +36,7 @@ A term is {deftech}_well-typed_ if it has a type under the rules of Lean's type 
 Only well-typed terms have a meaning.
 
 Terms are a dependently typed λ-calculus: they include function abstraction, application, variables, and `let`-bindings.
-In addition to bound variables, variables in the term language may refer to {tech}[constructors], {tech}[type constructors], {tech}[recursors], {deftech}[defined constants], or opaque constants.
+In addition to bound variables, variables in the term language may refer to {tech}[コンストラクタ]constructors, {tech}[型コンストラクタ]type constructors, {tech}[再帰子]recursors, {deftech}[defined constants], or opaque constants.
 Constructors, type constructors, recursors, and opaque constants are not subject to substitution, while defined constants may be replaced with their definitions.
 
 A {deftech}_derivation_ demonstrates the well-typedness of a term by explicitly indicating the precise inference rules that are used.
@@ -130,8 +130,8 @@ but is expected to have type
 :::
 ::::
 
-The basic types in Lean are {tech}[universes], {tech}[関数]function types, and {tech}[type constructors] of {tech}[inductive types].
-{tech}[Defined constants], applications of {tech}[recursors], function application, {tech}[axioms] or {tech}[opaque constants] may additionally give types, just as they can give rise to terms in any other type.
+The basic types in Lean are {tech}[universes], {tech}[関数]function types, and {tech}[型コンストラクタ]type constructors of {tech}[帰納型]inductive types.
+{tech}[Defined constants], applications of {tech}[再帰子]recursors, function application, {tech}[axioms] or {tech}[opaque constants] may additionally give types, just as they can give rise to terms in any other type.
 
 
 {include Manual.Language.Functions}
