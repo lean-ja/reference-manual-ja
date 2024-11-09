@@ -13,7 +13,10 @@ open Lean.Parser.Command («inductive» «structure» declValEqns computedField)
 
 set_option maxRecDepth 800
 
+/-
 #doc (Manual) "Logical Model" =>
+-/
+#doc (Manual) "論理モデル" =>
 
 # Recursors
 
