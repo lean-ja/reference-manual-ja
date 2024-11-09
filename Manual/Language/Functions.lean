@@ -231,7 +231,7 @@ However, not all functions originate from abstractions: {tech}[type constructors
 
 :::
 
-{keywordOf Lean.Parser.Command.declaration parser:=Lean.Parser.Command.definition}`def` のようなキーワードで定義された関数定義は {keywordOf Lean.Parser.Term.fun}`fun` に脱糖されます。しかし、すべての関数が抽象されたものではありません： {tech}[type constructors] ・ {tech}[constructors] ・ {tech}[recursors] は関数型を持つ場合がありますが、関数抽象だけでは定義できません。
+{keywordOf Lean.Parser.Command.declaration parser:=Lean.Parser.Command.definition}`def` のようなキーワードで定義された関数定義は {keywordOf Lean.Parser.Term.fun}`fun` に脱糖されます。しかし、すべての関数が抽象されたものではありません： {tech}[型コンストラクタ] ・ {tech}[コンストラクタ] ・ {tech}[再帰子] は関数型を持つ場合がありますが、関数抽象だけでは定義できません。
 
 :::comment
 # Currying
@@ -687,7 +687,7 @@ These operations result in an arbitrarily chosen inhabitant of the type in Lean'
 
 :::
 
-同様に、配列への範囲外アクセスなど、コンパイルされたコードでは実行時に失敗するはずの操作は、結果の型が inhabited であることが分かっている場合にのみ使用することができます。これらの操作の結果、Lean のロジックでは型の住人が任意に選ばれます（具体的には、その型の {name}`Inhabited` インスタンスで指定されたもの）。
+同様に、配列への範囲外アクセスなど、コンパイルされたコードではランタイムに失敗するはずの操作は、結果の型が inhabited であることが分かっている場合にのみ使用することができます。これらの操作の結果、Lean のロジックでは型の住人が任意に選ばれます（具体的には、その型の {name}`Inhabited` インスタンスで指定されたもの）。
 
 :::comment
 ::example "Panic"
