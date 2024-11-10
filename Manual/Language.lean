@@ -22,7 +22,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "The Lean Language" =>
+-/
+#doc (Manual) "Lean 言語について" =>
 
 {include Manual.Language.Files}
 
