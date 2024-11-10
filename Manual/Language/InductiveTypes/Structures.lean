@@ -12,7 +12,10 @@ open Verso.Genre Manual
 
 open Lean.Parser.Command («inductive» «structure» declValEqns computedField)
 
+/-
 #doc (Manual) "Structure Declarations" =>
+-/
+#doc (Manual) "構造体の宣言" =>
 
 :::syntax command
 ```grammar
