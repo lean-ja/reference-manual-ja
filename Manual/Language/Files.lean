@@ -13,7 +13,7 @@ open Verso.Genre Manual
 /-
 #doc (Manual) "Files" =>
 -/
-#doc (Manual) "ファイル" =>
+#doc (Manual) "ファイル（Files）" =>
 
 :::comment
 The smallest unit of compilation in Lean is a single {deftech}[module].
@@ -27,7 +27,7 @@ Lean におけるコンパイルの最小単位は1つの {deftech}[モジュー
 # Modules
 :::
 
-# モジュール
+# モジュール（Modules）
 
 :::comment
 Every Lean file defines a module.
@@ -45,7 +45,7 @@ Describe case sensitivity/preservation for filenames here
 ## Encoding and Representation
 :::
 
-## エンコードと表現
+## エンコードと表現（Encoding and Representation）
 
 :::comment
 Lean modules are Unicode text files encoded in UTF-8. {TODO}[Figure out the status of BOM and Lean]
@@ -63,7 +63,7 @@ Marginal note: this is to make cached files and `#guard_msgs` and the like work 
 ## Concrete Syntax
 :::
 
-## 具体的な構文
+## 具体的な構文（Concrete Syntax）
 
 :::comment
 Lean's concrete syntax is extensible.
@@ -77,7 +77,7 @@ Lean の具体的な構文は拡張可能です。Lean のような言語では�
 ### Whitespace
 :::
 
-### 空白
+### 空白（Whitespace）
 
 :::comment
 Tokens in Lean may be separated by any number of {deftech}[_whitespace_] character sequences.
@@ -91,7 +91,7 @@ Lean における字句は {deftech}[_空白_] （whitespace）文字の列で�
 ### Comments
 :::
 
-### コメント
+### コメント（Comments）
 
 :::comment
 Comments are stretches of the file that, despite not being whitespace, are treated as such.
@@ -124,7 +124,7 @@ Lean has two syntaxes for comments:
 ### Keywords and Identifiers
 :::
 
-### キーワードと識別子
+### キーワードと識別子（Keywords and Identifiers）
 
 :::comment
 An {deftech}[identifier] consists of one or more identifier components, separated by `'.'`.{index}[identifier]
@@ -231,7 +231,7 @@ Hierarchical identifiers are used to represent both module names and names in a 
 ## Structure
 :::
 
-## 構造体
+## 構造体（Structure）
 %%%
 tag := "module-structure"
 %%%
@@ -253,7 +253,7 @@ A module consists of a {deftech}_module header_ followed by a sequence of {defte
 ### Module Headers
 :::
 
-### モジュールヘッダ
+### モジュールヘッダ（Module Headers）
 
 :::comment
 The module header consists of a sequence of {deftech}[`import` statements].
@@ -323,7 +323,7 @@ Lean searches its include path for the corresponding importable module file.
 ### Commands
 :::
 
-### コマンド
+### コマンド（Commands）
 
 :::comment
 {tech}[Commands] are top-level statements in Lean.
@@ -342,7 +342,7 @@ Make the index include links to all commands, then xref from here
 ## Contents
 :::
 
-## 内容
+## 内容（Contents）
 
 :::comment
 A module includes an {TODO}[def and xref] environment, which includes both the datatype and constant definitions from an environment and any data stored in {TODO}[xref] its environment extensions.
@@ -357,7 +357,7 @@ This means that an imported module can be loaded without re-executing all of its
 # Packages, Libraries, and Targets
 :::
 
-# パッケージ・ライブラリ・ターゲット
+# パッケージ・ライブラリ・ターゲット（Packages, Libraries, and Targets）
 
 :::comment
 Lean code is organized into {deftech}_packages_, which are units of code distribution.
