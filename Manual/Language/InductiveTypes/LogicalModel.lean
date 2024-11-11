@@ -16,14 +16,14 @@ set_option maxRecDepth 800
 /-
 #doc (Manual) "Logical Model" =>
 -/
-#doc (Manual) "論理 モデル" =>
+#doc (Manual) "論理モデル（Logical Model）" =>
 
 :::comment
 # Recursors
 
 :::
 
-# 再帰子
+# 再帰子（Recursors）
 
 :::comment
 Every inductive type is equipped with a {tech}[recursors].
@@ -39,7 +39,7 @@ Recursors have function types, but they are primitive and are not definable usin
 
 :::
 
-## 再帰子の型
+## 再帰子の型（Recursor Types）
 
 :::comment
 The recursor takes the following parameters:
@@ -244,7 +244,7 @@ The cases for non-recursive constructors are the base cases, and the additional 
 ### Subsingleton Elimination
 :::
 
-### Subsingleton 除去
+### Subsingleton 除去（Subsingleton Elimination）
 
 %%%
 tag := "subsingleton-elimination"
@@ -394,7 +394,7 @@ This means that proofs of equality can be used to rewrite the types of non-propo
 
 :::
 
-## 簡約
+## 簡約（Reduction）
 
 :::comment
 In addition to adding new constants to the logic, inductive datatype declarations also add new reduction rules.
@@ -417,7 +417,7 @@ If there are recursive parameters, then these arguments to the case are found by
 # Well-Formedness Requirements
 :::
 
-# 適格要件
+# 適格要件（Well-Formedness Requirements）
 
 
 %%%
@@ -438,7 +438,7 @@ They are conservative: there exist potential inductive types that do not undermi
 
 :::
 
-## 宇宙レベル
+## 宇宙レベル（Universe Levels）
 
 :::comment
 Type constructors of inductive types must either inhabit a {tech}[universe] or a function type whose return type is a universe.
@@ -450,7 +450,7 @@ If the universe is not {lean}`Prop`, then the following must hold for each param
 
 :::
 
-帰納型の型コンストラクタは {tech}[universe] か戻り値が宇宙である関数型のどちらかに属さなければなりません。各コンストラクタは帰納型の完全な適用を返す関数型に属さなければなりません。もし帰納型の宇宙が {lean}`Prop` であれば、 {lean}`Prop` は {tech}[impredicative] であるため宇宙にはそれ以上の制限はありません。もし宇宙が {lean}`Prop` でない場合、コンストラクタの各パラメータについて以下が成り立つ必要があります：
+帰納型の型コンストラクタは {tech}[宇宙] か戻り値が宇宙である関数型のどちらかに属さなければなりません。各コンストラクタは帰納型の完全な適用を返す関数型に属さなければなりません。もし帰納型の宇宙が {lean}`Prop` であれば、 {lean}`Prop` は {tech}[impredicative] であるため宇宙にはそれ以上の制限はありません。もし宇宙が {lean}`Prop` でない場合、コンストラクタの各パラメータについて以下が成り立つ必要があります：
  * コンストラクタのパラメータが（パラメータか添字かの意味で）帰納型のパラメータである場合、このパラメータの型は型コンストラクタの宇宙より大きくはできません。
  * その他のすべてのコンストラクタのパラメータは型コンストラクタの宇宙より小さくなければなりません。
 
@@ -630,7 +630,7 @@ invalid universe polymorphic type, the resultant universe is not Prop (i.e., 0),
 # Constructions for Termination Checking
 :::
 
-# 停止性チェックのための構成
+# 停止性チェックのための構成（Constructions for Termination Checking）
 
 %%%
 tag := "recursor-elaboration-helpers"
@@ -651,8 +651,8 @@ First, the equation compiler (which translates recursive functions with pattern 
 
 Lean のコア型理論が帰納型に対して規定している型コンストラクタ・コンストラクタ・再帰子に加えて、Lean は多くの補助構成を構築しています。まず、等式のコンパイラ（パターンマッチによる再帰関数を再帰子の適用に変換する）はこれらの追加のコンストラクタを使用します：
  * `recOn` は各コンストラクタのケースよりもターゲットが優先される再帰子のバージョンです。
- * `casesOn` は再帰子のバージョンであり、ターゲットが各コンストラクタのケースより前にあり、再帰的な引数は帰納法の仮定を生成しません。これはプリミティブな再帰ではなく、ケース分析を表現しています。
- * `below` はある動機に対して、ターゲットの部分木である帰納型の _すべての_ 住人がその動機を満たすことを表現する型を計算します。これは、帰納法やプリミティブな再帰の動機を強再帰や強帰納法の動機に変換します。
+ * `casesOn` は再帰子のバージョンであり、ターゲットが各コンストラクタのケースより前にあり、再帰的な引数は帰納法の仮定を生成しません。これは原始再帰ではなく、ケース分析を表現しています。
+ * `below` はある動機に対して、ターゲットの部分木である帰納型の _すべての_ 住人がその動機を満たすことを表現する型を計算します。これは、帰納法や原始再帰の動機を強再帰や強帰納法の動機に変換します。
  * `brecOn` は `below` を使用して、直前の再帰パラメータだけでなく、すべての部分木へのアクセスを提供する再帰子のバージョンです。これは強帰納法を表現しています。
  * `noConfusion` は一般的な文であり、そこからコンストラクタの単射性と不連結性を導き出すことができます。
  * `noConfusionType` は `noConfusion` に対して用いられ、2つのコンストラクタが等しい場合どうなるかを決定する動機です。別々のコンストラクタの場合、これは {lean}`False` です；両方のコンストラクタが同じであれば、それぞれのパラメータが等しいという結果になります。

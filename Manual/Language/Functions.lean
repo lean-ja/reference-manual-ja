@@ -13,7 +13,7 @@ open Verso.Genre Manual
 /-
 #doc (Manual) "Functions" =>
 -/
-#doc (Manual) "関数" =>
+#doc (Manual) "関数（Functions）" =>
 
 :::comment
 Function types are a built-in feature of Lean.
@@ -188,7 +188,7 @@ i : Nat
 
 :::
 
-# 関数
+# 関数（Functions）
 
 :::comment
 Terms with function types can be created via abstractions, introduced with the {keywordOf Lean.Parser.Term.fun}`fun` keyword.
@@ -238,7 +238,7 @@ However, not all functions originate from abstractions: {tech}[type constructors
 
 :::
 
-# カリー化
+# カリー化（Currying）
 
 :::comment
 In Lean's core type theory, every function maps each element of the domain to a single element of the range.
@@ -300,7 +300,7 @@ These are equivalent to writing nested {keywordOf Lean.Parser.Term.fun}`fun` ter
 
 :::
 
-# 暗黙の関数
+# 暗黙の関数（Implicit Functions）
 
 :::comment
 Lean supports implicit parameters to functions.
@@ -323,7 +323,7 @@ Lean は関数への暗黙のパラメータをサポートしています。こ
 
   : 通常の暗黙のパラメータ
 
-    通常の暗黙のパラメータとは、Lean が単一化によって値を決定すべき関数パラメータのことです。言い換えると、各呼び出し部位は、関数呼び出し全体が適切に型付けされるような潜在的な引数の値を1つだけ持つべきです。Lean のエラボレータは関数の各呼び出しですべての暗黙引数の値を見つけようとします。通常の暗黙の引数は波括弧（`{` と `}`）で囲んで記述します。
+    通常の暗黙のパラメータとは、Lean が単一化によって値を決定すべき関数パラメータのことです。言い換えると、各呼び出し部位は、関数呼び出し全体が well-typed であるような潜在的な引数の値を1つだけ持つべきです。Lean のエラボレータは関数の各呼び出しですべての暗黙引数の値を見つけようとします。通常の暗黙の引数は波括弧（`{` と `}`）で囲んで記述します。
 
 :::comment
   : Strict implicit parameters
@@ -501,7 +501,7 @@ example : (⦃x : Nat⦄ → Nat) = (Nat → Nat) := rfl
 
 :::
 
-# パターンマッチ
+# パターンマッチ（Pattern Matching）
 
 ::::syntax term
 :::comment
@@ -606,7 +606,7 @@ fun n =>
 
 :::
 
-# 外延性
+# 外延性（Extensionality）
 
 :::comment
 Definitional equality of functions in Lean is {deftech}_intensional_.
@@ -615,7 +615,7 @@ To a first approximation, this means that two functions are definitionally equal
 
 :::
 
-Lean における関数の定義上の等価性は {deftech}_内包的_ （intensional）です。つまり、この定義上の等価性は、束縛変数のリネームと {tech}[reduction] によって _構文上_ （syntactically）で定義されます。大まかに言えば、これは2つの関数が同じアルゴリズムを実装していれば定義上等しいということを意味し、定義域の等しい要素を値域の等しい要素にマッピングしていれば等しいという通常の数学的な等値性の概念とは異なります。
+Lean における関数の定義上の等価性は {deftech}_内包的_ （intensional）です。つまり、この定義上の等価性は、束縛変数のリネームと {tech}[簡約] によって _構文上_ （syntactically）で定義されます。大まかに言えば、これは2つの関数が同じアルゴリズムを実装していれば定義上等しいということを意味し、定義域の等しい要素を値域の等しい要素にマッピングしていれば等しいという通常の数学的な等値性の概念とは異なります。
 
 :::comment
 Intensional equality is mechanically decidable; Lean's type checker can decide whether two functions are intensionally equal.
@@ -623,7 +623,7 @@ Extensional equality is not decidable, so it is instead made available as reason
 
 :::
 
-Lean の型チェッカは2つの関数が内包的に等しいかどうかを判断できます。外延的な等価性は決定できないため、代わりに2つの関数が等しいという {tech}[proposition] を証明する時に推論原理として利用できるようにします。
+Lean の型チェッカは2つの関数が内包的に等しいかどうかを判断できます。外延的な等価性は決定できないため、代わりに2つの関数が等しいという {tech}[命題] を証明する時に推論原理として利用できるようにします。
 
 ::::keepEnv
 ```lean (show := false)
@@ -658,7 +658,7 @@ When reasoning about functions, the theorem {lean}`funext`{margin}[Unlike some i
 
 :::
 
-# 全域性と停止
+# 全域性と停止（Totality and Termination）
 
 :::comment
 Functions can be defined recursively using {keywordOf Lean.Parser.Command.declaration}`def`.
