@@ -22,7 +22,10 @@ set_option linter.unusedVariables false
 
 open Lean.Elab.Tactic
 
+/-
 #doc (Manual) "Tactic Proofs" =>
+-/
+#doc (Manual) "タクティクによる証明（Tactic Proofs）" =>
 %%%
 tag := "tactics"
 %%%
