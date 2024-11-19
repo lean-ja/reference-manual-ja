@@ -17,7 +17,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Targeted Rewriting with {tactic}`conv`" =>
+-/
+#doc (Manual) "{tactic}`conv` によるターゲットの書き換え（Targeted Rewriting with {tactic}`conv` ）" =>
 
 
 The {tactic}`conv`, or conversion, tactic allows targeted rewriting within a goal.
