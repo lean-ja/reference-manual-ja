@@ -23,8 +23,12 @@ set_option linter.unusedVariables false
 -/
 #doc (Manual) "タクティクリファレンス（Tactic Reference）" =>
 
-
+:::comment
 # Assumptions
+
+:::
+
+# 仮定（Assumptions）
 
 :::tactic Lean.Parser.Tactic.assumption
 :::
@@ -32,7 +36,12 @@ set_option linter.unusedVariables false
 :::tactic "apply_assumption"
 :::
 
+:::comment
 # Quantifiers
+
+:::
+
+# 量化子（Quantifiers）
 
 :::tactic "exists"
 :::
@@ -51,7 +60,12 @@ set_option linter.unusedVariables false
 :::
 
 
+:::comment
 # Relations
+
+:::
+
+# 関係（Relations）
 
 :::planned 47
  * Descriptions of the `symm` and `refl` and `trans` attributes
@@ -78,7 +92,12 @@ set_option linter.unusedVariables false
 :::
 
 
+:::comment
 ## Equality
+
+:::
+
+## 等価性（Equality）
 
 :::tactic "subst"
 :::
@@ -98,7 +117,12 @@ set_option linter.unusedVariables false
 :::tactic "ac_rfl"
 :::
 
+:::comment
 # Lemmas
+
+:::
+
+# 補題（Lemmas）
 
 :::tactic "exact"
 :::
@@ -119,7 +143,12 @@ set_option linter.unusedVariables false
 :::tactic "apply_rules"
 :::
 
+:::comment
 # Falsehood
+
+:::
+
+# 偽（Falsehood）
 
 :::tactic "exfalso"
 :::
@@ -131,7 +160,12 @@ set_option linter.unusedVariables false
 :::
 
 
+:::comment
 # Goal Management
+
+:::
+
+# ゴールの管理（Goal Management）
 
 :::tactic "suffices"
 :::
@@ -158,10 +192,20 @@ set_option linter.unusedVariables false
 :::
 
 
+:::comment
 # Cast Management
 
+:::
+
+# キャストの管理（Cast Management）
+
+:::comment
 The tactics in this section make it easier avoid getting stuck on {deftech}_casts_, which are functions that coerce data from one type to another, such as converting a natural number to the corresponding integer.
 They are described in more detail in [_Simplifying Casts and Coercions_](https://arxiv.org/abs/2001.10594) by Robert Y. Lewis and Paul-Nicolas Madelaine.
+
+:::
+
+本節のタクティクは {deftech}_キャスト_ （cast）に詰まってしまうことを回避します。キャストとはある型から別の型にデータを強制する関数であり、例えば自然数を対応する整数に変換するようなものです。これらは Robert Y. Lewis と Paul-Nicolas Madelaine による [_Simplifying Casts and Coercions_](https://arxiv.org/abs/2001.10594) で詳しく説明されています。
 
 :::tactic Lean.Parser.Tactic.tacticNorm_cast_
 :::
@@ -184,8 +228,13 @@ They are described in more detail in [_Simplifying Casts and Coercions_](https:/
 
 
 
+:::comment
 # Extensionality
 
+
+:::
+
+# 外延性（Extensionality）
 
 :::tactic "ext"
 :::
@@ -201,8 +250,13 @@ They are described in more detail in [_Simplifying Casts and Coercions_](https:/
 
 {include 0 Manual.Tactics.Reference.Simp}
 
+
+# 書き換え（Rewriting）
+
+:::comment
 # Rewriting
 
+:::
 :::tactic "rw"
 :::
 
@@ -236,9 +290,19 @@ Implemented by {name}`Lean.Elab.Tactic.evalUnfold`.
 :::
 
 
+:::comment
 # Inductive Types
 
+:::
+
+# 帰納型（Inductive Types）
+
+:::comment
 ## Introduction
+
+:::
+
+## 帰納法（Introduction）
 
 :::tactic "constructor"
 :::
@@ -256,7 +320,13 @@ Implemented by {name}`Lean.Elab.Tactic.evalUnfold`.
 :::tactic "right"
 :::
 
+:::comment
 ## Elimination
+
+:::
+
+## 除去（Elimination）
+
 
 :::planned 48
 
@@ -280,11 +350,21 @@ Description of the `@[induction_eliminator]` and `@[cases_eliminator]` attribute
 :::
 
 
+:::comment
 # Library Search
 
+:::
+
+# ライブラリ検索（Library Search）
+
+:::comment
 The library search tactics are intended for interactive use.
 When run, they search the Lean library for lemmas or rewrite rules that could be applicable in the current situation, and suggests a new tactic.
 These tactics should not be left in a proof; rather, their suggestions should be incorporated.
+
+:::
+
+ライブラリ検索タクティクは対話的な使用を目的としています。これらを実行すると、Lean ライブラリ内を検索し、現在の状況に適用できそうな補題や書き換え規則を探し、新しいタクティクを提案します。これらのタクティクは証明の中に放置されるべきではなく、むしろその提案を受け入れるべきです。
 
 :::tactic "exact?"
 :::
@@ -295,12 +375,17 @@ These tactics should not be left in a proof; rather, their suggestions should be
 
 
 
-:::tacticExample
+::::tacticExample
 {goal show:=false}`∀ (i j k : Nat), i < j → j < k → i < k`
 ```setup
 intro i j k h1 h2
 ```
+:::comment
 In this proof state:
+:::
+
+この証明状態において：
+
 ```pre
 i j k : Nat
 h1 : i < j
@@ -308,7 +393,12 @@ h2 : j < k
 ⊢ i < k
 ```
 
+:::comment
 invoking {tacticStep}`apply?` suggests:
+
+:::
+
+{tacticStep}`apply?` の実行結果は以下を提案します：
 
 ```tacticOutput
 Try this: exact Nat.lt_trans h1 h2
@@ -317,13 +407,18 @@ Try this: exact Nat.lt_trans h1 h2
 ```post (show := false)
 
 ```
-:::
+::::
 
 
 :::tactic "rw?"
 :::
 
+:::comment
 # Case Analysis
+
+:::
+
+# ケース分析（Case Analysis）
 
 :::tactic "split"
 :::
@@ -331,7 +426,12 @@ Try this: exact Nat.lt_trans h1 h2
 :::tactic "by_cases"
 :::
 
+:::comment
 # Decision Procedures
+
+:::
+
+# 決定処理（Decision Procedures）
 
 :::tactic Lean.Parser.Tactic.decide show:="decide"
 :::
@@ -346,8 +446,13 @@ Try this: exact Nat.lt_trans h1 h2
 :::
 
 
+:::comment
 ## SAT Solver Integration
 
+
+:::
+
+## SAT ソルバの統合（SAT Solver Integration）
 
 :::tactic "bv_decide"
 :::
@@ -361,7 +466,12 @@ Try this: exact Nat.lt_trans h1 h2
 :::tactic Lean.Parser.Tactic.bvTrace
 :::
 
+:::comment
 # Control Flow
+
+:::
+
+# フロー制御（Control Flow）
 
 :::tactic "skip"
 :::
@@ -393,9 +503,19 @@ Try this: exact Nat.lt_trans h1 h2
 :::
 
 
+:::comment
 # Term Elaboration Backends
 
+:::
+
+# 項エラボレーションのバックエンド（Term Elaboration Backends）
+
+:::comment
 These tactics are used during elaboration of terms to satisfy obligations that arise.
+
+:::
+
+これらのタクティクは項のエラボレーション中において発生した義務を満たすために用いられます。
 
 :::tactic "decreasing_tactic"
 :::
@@ -417,7 +537,12 @@ These tactics are used during elaboration of terms to satisfy obligations that a
 
 
 
+:::comment
 # Debugging Utilities
+
+:::
+
+# デバッグ用ユーティリティ（Debugging Utilities）
 
 :::tactic "sorry"
 :::
@@ -435,7 +560,12 @@ These tactics are used during elaboration of terms to satisfy obligations that a
 :::
 
 
+:::comment
 # Other
+
+:::
+
+# その他（Other）
 
 :::tactic "trivial"
 :::
