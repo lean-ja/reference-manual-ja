@@ -21,7 +21,10 @@ set_option linter.unusedVariables false
 
 open Lean.Elab.Tactic
 
+/-
 #doc (Manual) "Custom Tactics" =>
+-/
+#doc (Manual) "カスタムタクティク（Custom Tactics）" =>
 
 ```lean (show := false)
 open Lean
