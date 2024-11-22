@@ -16,7 +16,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "The Simplifier" =>
+-/
+#doc (Manual) "単純化器（The Simplifier）" =>
 %%%
 tag := "the-simplifier"
 %%%
