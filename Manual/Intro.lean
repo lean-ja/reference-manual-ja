@@ -17,7 +17,7 @@ set_option pp.rawOnError true
 /-
 #doc (Manual) "Introduction" =>
 -/
-#doc (Manual) "はじめに" =>
+#doc (Manual) "はじめに（Introduction）" =>
 %%%
 htmlSplit := .never
 %%%
@@ -71,7 +71,7 @@ Lean のプログラムは新しいタクティクや証明の自動化を実装
 ## History
 :::
 
-## 歴史
+## 歴史（History）
 
 :::comment
 Leonardo de Moura launched the Lean project when he was at Microsoft Research in 2013, and Lean 0.1 was officially released on June 16, 2014.
@@ -115,7 +115,7 @@ Leonardo de Moura と彼の共同設立者である Sebastian Ullrich は2023年
 # Typographical Conventions
 :::
 
-# 表記ルール
+# 表記規則（Typographical Conventions）
 
 :::comment
 This document makes use of a number of typographical and layout conventions to indicate various aspects of the information being presented.
@@ -127,7 +127,7 @@ This document makes use of a number of typographical and layout conventions to i
 ## Lean Code
 :::
 
-## Lean のコード
+## Lean のコード（Lean Code）
 
 :::comment
 This document contains many Lean code examples.
@@ -234,7 +234,7 @@ Identifiers in code examples are hyperlinked to their documentation.
 ## Examples
 :::
 
-## 例
+## 例（Examples）
 
 :::comment
 Illustrative examples are in callout boxes, as below:
@@ -271,7 +271,7 @@ inductive Even : Nat → Prop where
 ## Technical Terminology
 :::
 
-## 専門用語
+## 専門用語（Technical Terminology）
 
 :::comment
 {deftech}_Technical terminology_ refers to terms used in a very specific sense when writing technical material, such as this reference.
@@ -284,7 +284,7 @@ Uses of {tech}[technical terminology] are frequently hyperlinked to their defini
 ## Constant, Syntax, and Tactic References
 :::
 
-## 定数・構文・タクティクの参照
+## 定数・構文・タクティクの参照（Constant, Syntax, and Tactic References）
 
 :::comment
 Definitions, inductive types, syntax formers, and tactics have specific descriptions.

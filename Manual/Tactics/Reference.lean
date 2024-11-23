@@ -431,7 +431,7 @@ Try this: exact Nat.lt_trans h1 h2
 
 :::
 
-# 決定処理（Decision Procedures）
+# 決定手続き（Decision Procedures）
 
 :::tactic Lean.Parser.Tactic.decide show:="decide"
 :::
