@@ -45,7 +45,7 @@ Only well-typed terms have a meaning.
 
 :::
 
-{deftech}_項_ （term）は {deftech}_式_ （expression）としても知られ、Lean のコア言語における意味の基本単位です。これらは {tech}[エラボレータ] によってユーザが書いた構文から生成されます。Lean の型システムは項をその _型_ （type）に関連付けます。型は集合を表し、項は集合の個々の要素を表すと考えることができます。Lean の型理論のルールに従った型を持つ項は {deftech}_well-typed_ と言います。well-typed である項のみが意味を持ちます。
+{deftech}_項_ （term）は {deftech}_式_ （expression）としても知られ、Lean のコア言語における意味の基本単位です。これらは {tech}[エラボレータ] によってユーザが書いた構文から生成されます。Lean の型システムは項をその _型_ （type）に関連付けます。型は集合を表し、項は集合の個々の要素を表すと考えることができます。Lean の型理論の規則に従った型を持つ項は {deftech}_well-typed_ と言います。well-typed である項のみが意味を持ちます。
 
 :::comment
 Terms are a dependently typed λ-calculus: they include function abstraction, application, variables, and `let`-bindings.
