@@ -22,9 +22,14 @@ set_option pp.rawOnError true
 -/
 #doc (Manual) "基本的な型（Basic Types）" =>
 
+:::comment
 Lean includes a number of built-in datatypes that are specially supported by the compiler.
 Some, such as {lean}`Nat`, additionally have special support in the kernel.
 Other types don't have special compiler support _per se_, but rely in important ways on the internal representation of types for performance reasons.
+
+:::
+
+Lean にはコンパイラが特別にサポートする組み込みのデータ型が多数あります。 {lean}`Nat` のように、カーネルで特別にサポートされているものもあります。その他の型はコンパイラからの特別なサポート _自体_ はありませんが、パフォーマンス上の理由から型の内部表現に依存しています。
 
 {include 0 Manual.BasicTypes.Nat}
 
@@ -57,24 +62,59 @@ Other types don't have special compiler support _per se_, but rely in important 
  * Relationship between IEEE floats and decidable equality
 :::
 
+:::comment
 # Characters
+
+:::
+
+# 文字（Characters）
 
 {docstring Char}
 
+:::comment
 ## Syntax
 
+:::
+
+## 構文（Syntax）
+
+:::comment
 ## Logical Model
 
 
 
+:::
+
+## 論理モデル（Logical Model）
+
+:::comment
 ## Run-Time Representation
 
+:::
+
+## ランタイム表現（Run-Time Representation）
+
+:::comment
 In monomorphic contexts, characters are represented as 32-bit immediate values. In other words, a field of a datatype or structure of type `Char` does not require indirection to access. In polymorphic contexts, characters are boxed.
 
 
+:::
+
+モノ射なコンテキストでは、文字は32ビットの即値として表現されます。言い換えると、`Char` 型のデータ型や構造体のフィールドにアクセスする際にインダイレクトは必要ありません。多相なコンテキストでは文字はボックス化されます。
+
+:::comment
 ## API Reference
 
+:::
+
+## API リファレンス（API Reference）
+
+:::comment
 ### Character Classes
+
+:::
+
+### 文字クラス（Character Classes）
 
 {docstring Char.isAlpha}
 
