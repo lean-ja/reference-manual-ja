@@ -17,7 +17,10 @@ open Verso.Genre Manual
 set_option pp.rawOnError true
 
 
+/-
 #doc (Manual) "Basic Types" =>
+-/
+#doc (Manual) "基本的な型（Basic Types）" =>
 
 Lean includes a number of built-in datatypes that are specially supported by the compiler.
 Some, such as {lean}`Nat`, additionally have special support in the kernel.
