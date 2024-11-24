@@ -33,7 +33,10 @@ def wadlerBlott89 : InProceedings where
   booktitle := .concat (inlines!"Proceedings of the 16th Symposium on Principles of Programming Languages")
 
 set_option maxRecDepth 100000
+/-
 #doc (Manual) "Type Classes" =>
+-/
+#doc (Manual) "型クラス（Type Classes）" =>
 %%%
 tag := "type-classes"
 %%%
