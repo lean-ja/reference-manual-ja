@@ -103,14 +103,14 @@ example : (fun (x y z : Nat) => x + (y + z)) = (fun x y z => (z + x) + y) := by
 
 :::comment
 # Control Structures
+:::
+
+# 制御構造（Control Structures）
 %%%
 tag := "conv-control"
 %%%
 
 
-:::
-
-# 制御構造（Control Structures）
 
 :::conv first show := "first"
 :::
@@ -138,14 +138,14 @@ tag := "conv-control"
 
 :::comment
 # Goal Selection
+:::
+
+# ゴールの選択（Goal Selection）
 %%%
 tag := "conv-goals"
 %%%
 
 
-:::
-
-# ゴールの選択（Goal Selection）
 
 :::conv allGoals show:= "all_goals"
 :::
@@ -177,14 +177,14 @@ tag := "conv-goals"
 
 :::comment
 # Navigation
+:::
+
+# 移動（Navigation）
 %%%
 tag := "conv-nav"
 %%%
 
 
-:::
-
-# 移動（Navigation）
 
 :::conv lhs show:= "lhs"
 :::
@@ -247,14 +247,14 @@ tag := "conv-change"
 
 :::comment
 ## Reduction
+:::
+
+## 簡約（Reduction）
 %%%
 tag := "conv-reduction"
 %%%
 
 
-:::
-
-## 簡約（Reduction）
 
 :::conv whnf show:= "whnf"
 :::
@@ -291,13 +291,13 @@ tag := "conv-simp"
 
 :::comment
 ## Rewriting
+:::
+
+## 書き換え（Rewriting）
 %%%
 tag := "conv-rw"
 %%%
 
-:::
-
-## 書き換え（Rewriting）
 
 :::conv change show:= "change"
 :::
@@ -316,14 +316,14 @@ tag := "conv-rw"
 
 :::comment
 # Nested Tactics
+:::
+
+# 入れ子のタクティク（Nested Tactics）
 %%%
 tag := "conv-nested"
 %%%
 
 
-:::
-
-# 入れ子のタクティク（Nested Tactics）
 
 :::tactic Lean.Parser.Tactic.Conv.convTactic
 :::
@@ -343,13 +343,13 @@ tag := "conv-nested"
 
 :::comment
 # Debugging Utilities
+:::
+
+# デバッグ用ユーティリティ（Debugging Utilities）
 %%%
 tag := "conv-debug"
 %%%
 
-:::
-
-# デバッグ用ユーティリティ（Debugging Utilities）
 
 :::conv convTrace_state show:= "trace_state"
 :::
@@ -357,13 +357,13 @@ tag := "conv-debug"
 
 :::comment
 # Other
+:::
+
+# その他（Other）
 %%%
 tag := "conv-other"
 %%%
 
-:::
-
-# その他（Other）
 
 :::conv convRfl show:= "rfl"
 :::

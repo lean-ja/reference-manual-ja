@@ -189,14 +189,14 @@ i : Nat
 
 :::comment
 # Functions
+:::
+
+# 関数（Functions）
 %%%
 tag := "function-terms"
 %%%
 
 
-:::
-
-# 関数（Functions）
 
 :::comment
 Terms with function types can be created via abstractions, introduced with the {keywordOf Lean.Parser.Term.fun}`fun` keyword.
@@ -243,14 +243,14 @@ However, not all functions originate from abstractions: {tech}[type constructors
 
 :::comment
 # Currying
+:::
+
+# カリー化（Currying）
 %%%
 tag := "currying"
 %%%
 
 
-:::
-
-# カリー化（Currying）
 
 :::comment
 In Lean's core type theory, every function maps each element of the domain to a single element of the range.
@@ -309,14 +309,14 @@ These are equivalent to writing nested {keywordOf Lean.Parser.Term.fun}`fun` ter
 
 :::comment
 # Implicit Functions
+:::
+
+# 暗黙の関数（Implicit Functions）
 %%%
 tag := "implicit-functions"
 %%%
 
 
-:::
-
-# 暗黙の関数（Implicit Functions）
 
 :::comment
 Lean supports implicit parameters to functions.
@@ -619,14 +619,14 @@ fun n =>
 
 :::comment
 # Extensionality
+:::
+
+# 外延性（Extensionality）
 %%%
 tag := "function-extensionality"
 %%%
 
 
-:::
-
-# 外延性（Extensionality）
 
 :::comment
 Definitional equality of functions in Lean is {deftech}_intensional_.
@@ -675,14 +675,14 @@ When reasoning about functions, the theorem {lean}`funext`{margin}[Unlike some i
 
 :::comment
 # Totality and Termination
+:::
+
+# 全域性と停止（Totality and Termination）
 %%%
 tag := "totality"
 %%%
 
 
-:::
-
-# 全域性と停止（Totality and Termination）
 
 :::comment
 Functions can be defined recursively using {keywordOf Lean.Parser.Command.declaration}`def`.
