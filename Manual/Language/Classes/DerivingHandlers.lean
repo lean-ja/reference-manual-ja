@@ -40,7 +40,10 @@ def derivableClassList : DirectiveExpander
     let theList ← `(Verso.Doc.Block.ul #[$[⟨0, #[Verso.Doc.Block.para #[$itemStx]]⟩],*])
     return #[theList]
 
+/-
 #doc (Manual) "Deriving Handlers" =>
+-/
+#doc (Manual) "ハンドラの導出（Deriving Handlers）" =>
 %%%
 tag := "deriving-handlers"
 %%%

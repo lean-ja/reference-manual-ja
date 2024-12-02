@@ -13,7 +13,10 @@ open Manual
 open Verso.Genre
 open Verso.Genre.Manual
 
+/-
 #doc (Manual) "Basic Classes" =>
+-/
+#doc (Manual) "基本的なクラス（Basic Classes）" =>
 %%%
 tag := "basic-classes"
 %%%
