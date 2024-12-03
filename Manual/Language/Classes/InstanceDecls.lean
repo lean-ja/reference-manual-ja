@@ -13,7 +13,10 @@ open Manual
 open Verso.Genre
 open Verso.Genre.Manual
 
+/-
 #doc (Manual) "Instance Declarations" =>
+-/
+#doc (Manual) "インスタンスの宣言（Instance Declarations）" =>
 %%%
 tag := "instance-declarations"
 %%%
