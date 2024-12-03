@@ -298,6 +298,7 @@
 | choice node | |
 | cumulative | |
 | impredicativity, predicativity | |
+| inhabited | |
 | no confusion | |
 | out, semi-out | |
 | packed array | System Verilogという言語にこの名前の文法要素がある？ |

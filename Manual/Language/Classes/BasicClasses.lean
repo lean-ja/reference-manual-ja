@@ -13,14 +13,27 @@ open Manual
 open Verso.Genre
 open Verso.Genre.Manual
 
+/-
 #doc (Manual) "Basic Classes" =>
+-/
+#doc (Manual) "基本的なクラス（Basic Classes）" =>
 %%%
 tag := "basic-classes"
 %%%
 
+:::comment
 Many Lean type classes exist in order to allow built-in notations such as addition or array indexing to be overloaded.
 
+:::
+
+Lean の型クラスの多くは、加算や配列インデックスのような組み込み記法をオーバーロードできるようにするために存在します。
+
+:::comment
 # Boolean Equality Tests
+
+:::
+
+# 真偽値上の等価性のテスト（Boolean Equality Tests）
 
 {docstring BEq}
 
@@ -28,7 +41,12 @@ Many Lean type classes exist in order to allow built-in notations such as additi
 
 {docstring LawfulBEq}
 
+:::comment
 # Ordering
+
+:::
+
+# 順序（Ordering）
 
 {docstring Ord}
 
@@ -36,7 +54,12 @@ Many Lean type classes exist in order to allow built-in notations such as additi
 
 {docstring LE}
 
+:::comment
 # Decidability
+
+:::
+
+# 決定可能性（Decidability）
 
 {docstring Decidable}
 
@@ -44,13 +67,23 @@ Many Lean type classes exist in order to allow built-in notations such as additi
 
 {docstring DecidableEq}
 
+:::comment
 # Inhabited Types
+
+:::
+
+# inhabited な型（Inhabited Types）
 
 {docstring Inhabited}
 
 {docstring Nonempty}
 
+:::comment
 # Visible Representations
+
+:::
+
+# 表現の可視化（Visible Representations）
 
 :::planned 135
 
@@ -64,7 +97,12 @@ Many Lean type classes exist in order to allow built-in notations such as additi
 
 {docstring ToString}
 
+:::comment
 # Arithmetic and Bitwise Operators
+
+:::
+
+# 算術・ビット演算子（Arithmetic and Bitwise Operators）
 
 {docstring Zero}
 
@@ -116,13 +154,23 @@ Many Lean type classes exist in order to allow built-in notations such as additi
 
 {docstring HXor}
 
+:::comment
 # Append
+
+:::
+
+# 結合（Append）
 
 {docstring HAppend}
 
 {docstring Append}
 
+:::comment
 # Data Lookups
+
+:::
+
+# データの検索（Data Lookups）
 
 {docstring GetElem}
 
