@@ -16,7 +16,10 @@ open Verso.Genre.Manual
 
 
 
+/-
 #doc (Manual) "Instance Synthesis" =>
+-/
+#doc (Manual) "インスタンス統合（Instance Synthesis）" =>
 %%%
 tag := "instance-synth"
 %%%
