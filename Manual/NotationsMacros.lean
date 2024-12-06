@@ -25,7 +25,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Notations and Macros" =>
+-/
+#doc (Manual) "記法とマクロ（Notations and Macros）" =>
 %%%
 tag := "language-extension"
 %%%
