@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Notations" =>
+-/
+#doc (Manual) "記法（Notations）" =>
 %%%
 tag := "notations"
 %%%
