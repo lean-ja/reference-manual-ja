@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Custom Operators" =>
+-/
+#doc (Manual) "カスタム演算子（Custom Operators）" =>
 %%%
 tag := "operators"
 %%%
