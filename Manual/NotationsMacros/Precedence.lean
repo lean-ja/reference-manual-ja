@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Precedence" =>
+-/
+#doc (Manual) "優先順位（Precedence）" =>
 %%%
 tag := "precedence"
 %%%
