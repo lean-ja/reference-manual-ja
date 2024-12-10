@@ -215,7 +215,7 @@ The specifics of the assignment of this name should not be relied upon, both bec
 
 :::
 
-演算子には明示的に名前を付けることができます。この名前は Lean の構文の拡張を表し、主にメタプログラミングに使用されます。名前が明示的に与えられない場合、Lean は演算子に基づいて名前を生成します。この名前の割り当ての特定に頼るべきではありません。なぜなら内部的な名前の割り当てアルゴリズムは変更される可能性があり、また上流の依存関係で似たような演算子が導入されると衝突する可能性があるからです。このような場合、Lean は名前がいちいになるまで名前の割り当てを変更します。
+演算子には明示的に名前を付けることができます。この名前は Lean の構文の拡張を表し、主にメタプログラミングに使用されます。名前が明示的に与えられない場合、Lean は演算子に基づいて名前を生成します。この名前の割り当ての特定に頼るべきではありません。なぜなら内部的な名前の割り当てアルゴリズムは変更される可能性があり、また上流の依存関係で似たような演算子が導入されると衝突する可能性があるからです。このような場合、Lean は名前が一意になるまで名前の割り当てを変更します。
 
 :::::keepEnv
 :::comment
@@ -341,7 +341,7 @@ True + False : Prop
 However, because the new operator is not associative, the {tech}[local longest-match rule] means that only {name}`HAdd.hAdd` applies to an unparenthesized three-argument version:
 :::
 
-しかし、新しい演算子は結合的ではないため、 {tech}[ローカル最長一致規則] から {name}`HAdd.hAdd` だけが括弧をもちいない3引数バージョンに適用されることが導かれます：
+しかし、新しい演算子は結合的ではないため、 {tech}[ローカル最長一致規則] から {name}`HAdd.hAdd` だけが括弧を用いない3引数バージョンに適用されることが導かれます：
 
 ```lean (error := true) (name := trueOrFalseOrTrue1)
 #check True + False + True
@@ -387,7 +387,7 @@ Additional diagnostic information may be available using the `set_option diagnos
 The new operator is not associative, so the {tech}[local longest-match rule] means that only {name}`HAdd.hAdd` applies to the three-argument version:
 :::
 
-新しい演算子は結合的ではないため、 {tech}[ローカル最長一致規則] から {name}`HAdd.hAdd` だけが括弧をもちいない3引数バージョンに適用されることが導かれます：
+新しい演算子は結合的ではないため、 {tech}[ローカル最長一致規則] から {name}`HAdd.hAdd` だけが括弧を用いない3引数バージョンに適用されることが導かれます：
 
 ```lean (error := true) (name := trueOrFalseOrTrue2)
 #check True + False + True
