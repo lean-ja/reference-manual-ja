@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Defining New Syntax" =>
+-/
+#doc (Manual) "新しい構文の定義（Defining New Syntax）" =>
 
 Lean's uniform representation of syntax is very general and flexible.
 This means that extensions to Lean's parser do not require extensions to the representation of parsed syntax.
