@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 example := Char
 
+/-
 #doc (Manual) "Arrays" =>
+-/
+#doc (Manual) "配列（Arrays）" =>
 %%%
 tag := "Array"
 %%%
