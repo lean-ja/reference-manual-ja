@@ -66,13 +66,13 @@ Each goal in a tactic proof corresponds to an incomplete portion of a proof term
 
 :::comment
 # Running Tactics
-%%%
-tag := "by"
-%%%
 
 :::
 
 # タクティクの実行（Running Tactics）
+%%%
+tag := "by"
+%%%
 
 :::TODO
 The syntax of `by` is showing with commas instead of semicolons below
