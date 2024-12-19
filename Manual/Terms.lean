@@ -1959,7 +1959,7 @@ typeclass instance problem is stuck, it is often due to metavariables
 ```
 
 A prefix type ascription with {keywordOf Lean.Parser.Term.show}`show`, together with a {tech}[hole], can be used to indicate the monad.
-The {tech key:="デフォルトインスタンス"}[default]default instance {lean}`OfNat _ 5` instance provides enough type information to fill the hole with {lean}`Nat`.
+The {tech key:="デフォルトインスタンス"}[default] {lean}`OfNat _ 5` instance provides enough type information to fill the hole with {lean}`Nat`.
 ```lean
 example := show StateM String _ from do
   return 5
