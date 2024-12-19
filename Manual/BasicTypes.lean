@@ -393,7 +393,7 @@ Because {lean}`Bool` is an {tech}[enum inductive] type, it is represented by a s
 
 :::
 
-{lean}`Bool` は {tech}[enum inductive] 型であるため、コンパイルされたコードでは1バイトで表現されます。
+{lean}`Bool` は {tech}[列挙帰納的] 型であるため、コンパイルされたコードでは1バイトで表現されます。
 
 :::comment
 ## Booleans and Propositions
