@@ -18,7 +18,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Console Output" =>
+-/
+#doc (Manual) "コンソール出力（Console Output）" =>
 
 Lean includes convenience functions for writing to {tech}[standard output] and {tech}[standard error].
 All make use of {lean}`ToString` instances, and the varieties whose names end in `-ln` add a newline after the output.
