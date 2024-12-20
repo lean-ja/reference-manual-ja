@@ -18,7 +18,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Files, File Handles, and Streams" =>
+-/
+#doc (Manual) "ファイル・ファイルハンドラ・ストリーム（Files, File Handles, and Streams）" =>
 
 Lean provides a consistent filesystem API on all supported platforms.
 These are the key concepts:
