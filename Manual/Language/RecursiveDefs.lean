@@ -15,7 +15,10 @@ open Lean.Elab.Tactic.GuardMsgs.WhitespaceMode
 
 set_option maxRecDepth 1500
 
+/-
 #doc (Manual) "Recursive Definitions" =>
+-/
+#doc (Manual) "再帰定義（Recursive Definitions）" =>
 %%%
 tag := "recursive-definitions"
 %%%
