@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Mutable References" =>
+-/
+#doc (Manual) "可変な参照（Mutable References）" =>
 
 
 While ordinary {tech}[state monads] encode stateful computations with tuples that track the contents of the state along with the computation's value, Lean's runtime system also provides mutable references that are always backed by mutable memory cells.
