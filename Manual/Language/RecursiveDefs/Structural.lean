@@ -14,7 +14,10 @@ import Manual.Meta
 open Verso.Genre Manual
 open Lean.Elab.Tactic.GuardMsgs.WhitespaceMode
 
+/-
 #doc (Manual) "Structural Recursion" =>
+-/
+#doc (Manual) "構造的再帰（Structural Recursion）" =>
 %%%
 tag := "structural-recursion"
 %%%
