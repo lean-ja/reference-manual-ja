@@ -13,7 +13,10 @@ open Verso.Genre Manual
 open Lean.Elab.Tactic.GuardMsgs.WhitespaceMode
 
 
+/-
 #doc (Manual) "Recursion Example (for inclusion elsewhere)" =>
+-/
+#doc (Manual) "再帰の例（Recursion Example (for inclusion elsewhere)）" =>
 
 
 ```lean (show := false)
