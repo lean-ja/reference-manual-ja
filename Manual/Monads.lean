@@ -27,7 +27,10 @@ set_option pp.rawOnError true
 set_option linter.unusedVariables false
 set_option maxRecDepth 1024
 
+/-
 #doc (Manual) "Functors, Monads and `do`-Notation" =>
+-/
+#doc (Manual) "関手・モナド・`do` 記法（Functors, Monads and `do`-Notation）" =>
 
 %%%
 tag := "monads-and-do"
