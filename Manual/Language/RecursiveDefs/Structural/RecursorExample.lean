@@ -26,7 +26,7 @@ variable (n k : Nat) (mot : Nat → Sort u)
 :::comment
 ::example "Recursion vs Recursors"
 :::
-:::example "再帰 vs 再帰子"
+::::example "再帰 vs 再帰子"
 :::comment
 Addition of natural numbers can be defined via recursion on the second argument.
 This function is straightforwardly structurally recursive.
