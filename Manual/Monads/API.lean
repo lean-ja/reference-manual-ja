@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "API Reference" =>
+-/
+#doc (Manual) "API リファレンス（API Reference）" =>
 
 In addition to the general functions described here, there are some functions that are conventionally defined as part of the API of in the namespace of each collection type:
  * `mapM` maps a monadic function.
