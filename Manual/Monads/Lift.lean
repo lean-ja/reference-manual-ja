@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Lifting Monads" =>
+-/
+#doc (Manual) "モナドの持ち上げ（Lifting Monads）" =>
 
 ::::keepEnv
 
