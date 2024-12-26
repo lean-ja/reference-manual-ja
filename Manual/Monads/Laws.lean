@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Laws" =>
+-/
+#doc (Manual) "規則（Laws）" =>
 %%%
 tag := "monad-laws"
 %%%
