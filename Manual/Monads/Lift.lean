@@ -62,7 +62,7 @@ Users should not define new instances of {name}`MonadLiftT`, but it is useful as
 :::comment
 ::example "Monad Lifts in Function Signatures"
 :::
-:::example "関数シグネチャ内のモナドの持ち上げ"
+::::example "関数シグネチャ内のモナドの持ち上げ"
 :::comment
 The function {name}`IO.withStdin` has the following signature:
 :::
@@ -248,7 +248,7 @@ An instance of {lean}`MonadControl m n` explains how to interpret an arbitrary a
 
 :::
 
-このような「持ち上げの引き下げ」をサポートする型クラスが2つあります： {name}`MonadFunctor` と {name}`MonadControl` です。 {name}`MonadFunctor m n` のインスタンスは、 {lean}`m` の完全な多相関数を {lean}`n` として解釈する方法を説明します。この多相関数は {lean}`α` として _すべて_ の型に対して機能しなければなりません：これは {lean}`{α : Type u} → m α → m α` という型を持ちます。このような関数は、作用を持つかもしれないが、与えられた特定の値に基づいて作用を持つことはできない関数として考えることができます。 {lean}`MonadControl m n` のインスタンスは {lean}`m` から {lean}`n` への任意のアクションを解釈する方法を説明すると同時に、 {lean}`m` アクションが {lean}`n` アクションを実行できるようにする「逆インタプリタ」を提供します。
+このような「持ち上げの引き下げ」をサポートする型クラスが2つあります： {name}`MonadFunctor` と {name}`MonadControl` です。 {lean}`MonadFunctor m n` のインスタンスは、 {lean}`m` の完全な多相関数を {lean}`n` として解釈する方法を説明します。この多相関数は {lean}`α` として _すべて_ の型に対して機能しなければなりません：これは {lean}`{α : Type u} → m α → m α` という型を持ちます。このような関数は、作用を持つかもしれないが、与えられた特定の値に基づいて作用を持つことはできない関数として考えることができます。 {lean}`MonadControl m n` のインスタンスは {lean}`m` から {lean}`n` への任意のアクションを解釈する方法を説明すると同時に、 {lean}`m` アクションが {lean}`n` アクションを実行できるようにする「逆インタプリタ」を提供します。
 
 :::comment
 ## Monad Functors
