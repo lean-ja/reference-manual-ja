@@ -20,7 +20,10 @@ set_option pp.rawOnError true
 set_option linter.unusedVariables false
 -- set_option trace.SubVerso.Highlighting.Code true
 
+/-
 #doc (Manual) "Syntax" =>
+-/
+#doc (Manual) "構文（Syntax）" =>
 
 Lean supports programming with functors, applicative functors, and monads via special syntax:
  * Infix operators are provided for the most common operations.
