@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Exceptions" =>
+-/
+#doc (Manual) "例外（Exceptions）" =>
 %%%
 tag := "exception-monads"
 %%%

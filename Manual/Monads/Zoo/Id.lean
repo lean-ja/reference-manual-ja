@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Identity" =>
+-/
+#doc (Manual) "恒等モナド（Identity）" =>
 
 The identity monad {name}`Id` has no effects whatsoever.
 Both {name}`Id` and the corresponding implementation of {name}`pure` are the identity function, and {name}`bind` is reversed function application.

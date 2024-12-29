@@ -19,7 +19,10 @@ set_option pp.rawOnError true
 
 set_option linter.unusedVariables false
 
+/-
 #doc (Manual) "Combined Error and State Monads" =>
+-/
+#doc (Manual) "エラーと状態モナドの結合（Combined Error and State Monads）" =>
 
 ```lean (show := false)
 variable (ε : Type u) (σ σ' : Type u) (α : Type u)
