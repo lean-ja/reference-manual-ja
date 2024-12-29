@@ -33,7 +33,10 @@ set_option pp.rawOnError true
 set_option linter.unusedVariables false
 -- set_option trace.SubVerso.Highlighting.Code true
 
+/-
 #doc (Manual) "Varieties of Monads" =>
+-/
+#doc (Manual) "さまざまなモナド（Varieties of Monads）" =>
 
 
 The {lean}`IO` monad has many, many effects, and is used for writing programs that need to interact with the world.
