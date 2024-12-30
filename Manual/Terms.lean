@@ -18,7 +18,10 @@ open Lean.Elab.Tactic.GuardMsgs.WhitespaceMode
 
 set_option linter.constructorNameAsVariable false
 
+/-
 #doc (Manual) "Terms" =>
+-/
+#doc (Manual) "項（Terms）" =>
 %%%
 tag := "terms"
 %%%
