@@ -260,7 +260,12 @@ Which language features are controlled by the currently open namespaces?
 
 :::
 
+:::comment
 ## Section Scopes
+:::
+
+## セクションスコープ（Section Scopes）
+
 %%%
 tag := "scopes"
 %%%
