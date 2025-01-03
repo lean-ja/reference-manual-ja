@@ -274,7 +274,7 @@ The following data are tracked in section scopes:
 : The Current Namespace
 
   The {deftech}_current namespace_ is the namespace into which new declarations will be defined.
-  Additionally, {tech (key:="resolve")}[name resolution] includes all prefixes of the current namespace in the scope for global names.
+  Additionally, {tech (key:="解決")}[name resolution]resolve includes all prefixes of the current namespace in the scope for global names.
 
 : Opened Namespaces
 
