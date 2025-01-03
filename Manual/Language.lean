@@ -287,7 +287,7 @@ The following data are tracked in section scopes:
 
 : Section Variables
 
-  {tech}[Section variables] are names (or {tech}[instance implicit] parameters) that are automatically added as parameters to definitions.
+  {tech}[Section variables] are names (or {tech}[インスタンス暗黙]instance implicit parameters) that are automatically added as parameters to definitions.
   They are also added as universally-quantified assumptions to theorems when they occur in the theorem's statement.
 
 
