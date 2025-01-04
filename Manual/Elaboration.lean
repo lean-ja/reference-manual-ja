@@ -297,8 +297,8 @@ The language implemented by the kernel is a version of the Calculus of Construct
 カーネルが実装する言語は Calculus of Constructions の一種で、以下の特徴を持つ依存型理論です：
 + 完全な依存型
 + 相互に帰納的であったり、他の帰納型の下で入れ子になった再帰を含んだりする帰納的に定義されたデータ型
-+ {tech}[impredicative] ・定義上証明と irrelevant な {tech}[命題] の拡張的 {tech}[宇宙]
-+ {tech}[predicative] なデータの宇宙の非蓄積な階層
++ {tech}[非可述] ・定義上証明と irrelevant な {tech}[命題] の拡張的 {tech}[宇宙]
++ {tech}[可述] なデータの宇宙の非蓄積な階層
 * 定義上の計算規則を伴った {ref "quotients"}[商型] （Quotient type）
 + 命題上の関数外延性 {margin}[関数外延性は商型を使って証明できる定理ですが、重要な帰結であるため別で挙げておきます。]
 + 関数と積についての定義上のη等価性

@@ -437,7 +437,7 @@ For these universes, the universe of a function type is the least upper bound of
 
 :::
 
-{tech key:="universe level"}[レベル] `1` 以上の宇宙（つまり、`Type u` の階層）では、量化子は {deftech}[_predicative_] です。 {index}[predicative]{index subterm := "predicative"}[quantification] これらの宇宙では、関数型の宇宙は引数の型と戻り値の型の宇宙の最小上界となります。
+{tech key:="universe level"}[レベル] `1` 以上の宇宙（つまり、`Type u` の階層）では、量化子は {deftech}[_可述_] です。 {index}[predicative]{index subterm := "predicative"}[quantification] これらの宇宙では、関数型の宇宙は引数の型と戻り値の型の宇宙の最小上界となります。
 
 :::comment
 ::Manual.example "Universe levels of function types"
@@ -710,7 +710,7 @@ Level ::= 0 | 1 | 2 | ...  -- 具体的なレベル
         | u, v             -- 変数
         | Level + n        -- 定数の和
         | max Level Level  -- 最小上界
-        | imax Level Level -- Impredicative な最小上界
+        | imax Level Level -- 非可述な最小上界
 ````
 
 :::comment
@@ -730,7 +730,7 @@ If `B : Prop`, then the function type is itself a {lean}`Prop`; otherwise, the f
 
 :::
 
-`imax` は {lean}`Prop` の {tech}[impredicative] な量化子を実装するために使用されます。特に、`A : Sort u` かつ `B : Sort v` である場合、`(x : A) → B : Sort (imax u v)` となります。もし `B : Prop` ならば、その関数型は {lean}`Prop` であり、それ以外ではその関数型のレベルは `u` と `v` の最大値になります。
+`imax` は {lean}`Prop` の {tech}[非可述] な量化子を実装するために使用されます。特に、`A : Sort u` かつ `B : Sort v` である場合、`(x : A) → B : Sort (imax u v)` となります。もし `B : Prop` ならば、その関数型は {lean}`Prop` であり、それ以外ではその関数型のレベルは `u` と `v` の最大値になります。
 
 :::comment
 ### Universe Variable Bindings

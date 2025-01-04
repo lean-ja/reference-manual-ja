@@ -126,6 +126,7 @@
 | immediate value | 即値 | |
 | imperative | 命令型 | |
 | implicit parameter | 暗黙のパラメータ | |
+| impredicative | 非可述 | |
 | impredicativity | 非可述性 | |
 | inaccessible | （仮定のアクセス可否の文脈で）アクセス不能 | |
 | incompatible | 互換性 | |
@@ -206,6 +207,7 @@
 | polymorphic | 多相 | |
 | precedence | 優先順位 | 構文解析・演算子等の優先具合を指す |
 | predicate | 述語 | |
+| predicative | 可述 | |
 | predicativity | 可述性 | |
 | pretty printer | プリティプリンタ | |
 | primitive | プリミティブ | |
