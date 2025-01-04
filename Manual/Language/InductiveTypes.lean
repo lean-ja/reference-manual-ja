@@ -169,7 +169,7 @@ Type constructors with indices are said to specify {deftech}_indexed families_ {
 
 :::
 
-添字は型の _族_ （family）を定義していると見なすことができます。添字を選択するごとに、その族から型が選択され、その型は使用可能なコンストラクタのあつまりを持ちます。添字を持つ型のコンストラクタは {deftech}_添字族_ {index subterm:="of types"}[indexed family] （indexed family）の型を指定すると言われます。
+添字は型の _族_ （family）を定義していると見なすことができます。添字を選択するごとに、その族から型が選択され、その型は使用可能なコンストラクタのあつまりを持ちます。添字を持つ型のコンストラクタは {deftech}_添字付けられた型の族_ {index subterm:="of types"}[indexed family] （indexed family）の型を指定すると言われます。
 
 :::comment
 ## Example Inductive Types

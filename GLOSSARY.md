@@ -129,6 +129,7 @@
 | inaccessible | （仮定のアクセス可否の文脈で）アクセス不能 | |
 | incompatible | 互換性 | |
 | index, indices | 添字 | |
+| indexed family | 添字付けられた型の族 | |
 | induction | 帰納法 | |
 | induction hypothese | 帰納法の仮定 | |
 | inductively-defined | 帰納的に定義された | |
