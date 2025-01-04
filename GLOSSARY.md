@@ -30,7 +30,7 @@
 | case distinction | 場合分け | |
 | chapter | 章 | |
 | circular argument | 循環論法 | |
-| clause | 節 | |
+| clause | 句 | deriving, where はどちらも後ろに完全な文ではなく項が来るため、ニュアンス的に節よりも句の方が近いと判断 |
 | closed term | 閉項 | |
 | combinator | コンビネータ | |
 | comma | カンマ | |

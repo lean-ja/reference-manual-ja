@@ -438,7 +438,7 @@ When updating a structure, array values may also be replaced by including the in
 This updating does not require that the index expression be in bounds for the array, and out-of-bounds updates are discarded.
 :::
 
-コンストラクタの型の値を更新します。 {keywordOf Lean.Parser.Term.structInst}`with` 節の前にある項は構造体型を持つことが期待されます；これが更新される値です。構造体の新しいインスタンスが作成され、指定されていないすべてのフィールドが更新される値からコピーされ、指定されたフィールドは新しい値に置き換えられます。構造体を更新する時、更新するインデックスを角括弧で囲むことで配列の値を置き換えることもできます。この更新では、インデックスの式が配列の範囲内にある必要はなく、範囲外の更新は破棄されます。
+コンストラクタの型の値を更新します。 {keywordOf Lean.Parser.Term.structInst}`with` 句の前にある項は構造体型を持つことが期待されます；これが更新される値です。構造体の新しいインスタンスが作成され、指定されていないすべてのフィールドが更新される値からコピーされ、指定されたフィールドは新しい値に置き換えられます。構造体を更新する時、更新するインデックスを角括弧で囲むことで配列の値を置き換えることもできます。この更新では、インデックスの式が配列の範囲内にある必要はなく、範囲外の更新は破棄されます。
 
 ::::
 
@@ -523,7 +523,7 @@ New default values in the child structure take precedence over default values fr
 
 :::
 
-構造体はオプションの {keywordOf Lean.Parser.Command.declaration (parser:=«structure»)}`extends` 節を使用することで他の構造体を拡張することを宣言できます。結果として得られる構造体型は、すべての親構造体型のすべてのフィールドを持ちます。親構造体型が重複するフィールド名を持つ場合、重複するフィールド名はすべて同じ型を持たなければなりません。重複するフィールド名が異なるデフォルト値を持つ場合、そのフィールドを含む最後の親構造体のデフォルト値が使用されます。子構造体の新しいデフォルト値は、親構造体のデフォルト値よりも優先されます。
+構造体はオプションの {keywordOf Lean.Parser.Command.declaration (parser:=«structure»)}`extends` 句を使用することで他の構造体を拡張することを宣言できます。結果として得られる構造体型は、すべての親構造体型のすべてのフィールドを持ちます。親構造体型が重複するフィールド名を持つ場合、重複するフィールド名はすべて同じ型を持たなければなりません。重複するフィールド名が異なるデフォルト値を持つ場合、そのフィールドを含む最後の親構造体のデフォルト値が使用されます。子構造体の新しいデフォルト値は、親構造体のデフォルト値よりも優先されます。
 
 ```lean (show := false) (keep := false)
 -- If the overlapping fields have different default values, then the default value from the last parent structure that includes the field is used.

@@ -555,7 +555,7 @@ Please refer to {ref "deriving-instances"}[the section on instance deriving] for
 
 :::
 
-帰納的宣言のオプションとして、 {keywordOf Lean.Parser.Command.declaration (parser:=«inductive»)}`deriving` 節は、型クラスのインスタンスを導出するために使用することができます。詳細は {ref "deriving-instances"}[インスタンス導出についての節] を参照してください。
+帰納的宣言のオプションとして、 {keywordOf Lean.Parser.Command.declaration (parser:=«inductive»)}`deriving` 句は、型クラスのインスタンスを導出するために使用することができます。詳細は {ref "deriving-instances"}[インスタンス導出についての節] を参照してください。
 
 {include 0 Manual.Language.InductiveTypes.Structures}
 

@@ -135,7 +135,7 @@ As described in the {ref "elaboration-results"}[overview of the elaborator's out
 
 :::
 
- 2. 停止性の分析では、4つの技法を使って Lean のカーネルに関数を正当化しようとします。定義が {keywordOf Lean.Parser.Command.declaration}`unsafe` または {keywordOf Lean.Parser.Command.declaration}`partial` とマークされている場合、この技法が使用されます。明示的な {keywordOf Lean.Parser.Command.declaration}`termination_by` 節が存在する場合、指定された技法のみが試みられます。この節がない場合、エラボレータは探索を実行し、構造的再帰の候補として関数への各パラメータをテストし、各再帰呼び出しで減少する整礎関係を持つ測度を見つけようとします。
+ 2. 停止性の分析では、4つの技法を使って Lean のカーネルに関数を正当化しようとします。定義が {keywordOf Lean.Parser.Command.declaration}`unsafe` または {keywordOf Lean.Parser.Command.declaration}`partial` とマークされている場合、この技法が使用されます。明示的な {keywordOf Lean.Parser.Command.declaration}`termination_by` 句が存在する場合、指定された技法のみが試みられます。この句がない場合、エラボレータは探索を実行し、構造的再帰の候補として関数への各パラメータをテストし、各再帰呼び出しで減少する整礎関係を持つ測度を見つけようとします。
 
 :::comment
 This section describes the four techniques in detail.
