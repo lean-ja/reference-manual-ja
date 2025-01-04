@@ -438,7 +438,7 @@ When updating a structure, array values may also be replaced by including the in
 This updating does not require that the index expression be in bounds for the array, and out-of-bounds updates are discarded.
 :::
 
-コンストラクタの型の値を更新します。 {keywordOf Lean.Parser.Term.structInst}`with` 節の前にある項は構造体型を持つことが期待されます；これが更新される値です。構造体の新しいインスタンスが作成され、指定されていないすべてのフィールドが更新される値からコピーされ、指定されたフィールドは新しい値に置き換えられます。構造体を更新する時、更新するインデックスを角括弧で囲むことで配列の値を置き換えることもできます。この更新では、院デック氏の式が配列の範囲内にある必要はなく、範囲外の更新は破棄されます。
+コンストラクタの型の値を更新します。 {keywordOf Lean.Parser.Term.structInst}`with` 節の前にある項は構造体型を持つことが期待されます；これが更新される値です。構造体の新しいインスタンスが作成され、指定されていないすべてのフィールドが更新される値からコピーされ、指定されたフィールドは新しい値に置き換えられます。構造体を更新する時、更新するインデックスを角括弧で囲むことで配列の値を置き換えることもできます。この更新では、インデックスの式が配列の範囲内にある必要はなく、範囲外の更新は破棄されます。
 
 ::::
 
