@@ -274,7 +274,7 @@ Propositions have the following properties:
 
 :::
 
-: impredicativity
+: 非可述性
 
   命題はあらゆる宇宙からの型に対して量化することができます。
 
@@ -382,7 +382,11 @@ Because propositions and data are used differently and are governed by different
 
 命題とデータは異なる使われ方をし、異なる規則に支配されるため、より便利に区別するために {lean}`Type` と {lean}`Prop` という省略形が用意されています。 {index}[`Type`] {index}[`Prop`] `Type u` は `Sort (u + 1)` の省略形であるため、 {lean}`Type 0` は {lean}`Sort 1` で {lean}`Type 3` は {lean}`Sort 4` です。 {lean}`Type 0` は {lean}`Type` と省略することもできるため、 `Unit : Type` および `Type : Type 1` です。 {lean}`Prop` は {lean}`Sort 0` の省略形です。
 
+:::comment
 ## Predicativity
+:::
+
+## 可述性（Predicativity）
 
 :::comment
 Each universe contains dependent function types, which additionally represent universal quantification and implication.
@@ -399,9 +403,12 @@ In other words, propositions feature {deftech}[_impredicative_] {index}[impredic
 
 :::
 
-命題を返す関数である述語（つまり、関数の結果が `Prop` にある型である場合）は引数の型がどのような宇宙に会っても構いませんが、関数の型自体は `Prop` に留まります。言い換えると、命題は {deftech}[_impredicative_] {index}[impredicative]{index subterm := "impredicative"}[quantification] な量化子を特徴づけます。というのも、命題はそれ自体、すべての命題（および他のすべての命題）についての文になりうるからです。
+命題を返す関数である述語（つまり、関数の結果が `Prop` にある型である場合）は引数の型がどのような宇宙に会っても構いませんが、関数の型自体は `Prop` に留まります。言い換えると、命題は {deftech}[_非可述_] {index}[impredicative]{index subterm := "impredicative"}[quantification] な量化子を特徴づけます。というのも、命題はそれ自体、すべての命題（および他のすべての命題）についての文になりうるからです。
 
-::::Manual.example "Impredicativity"
+:::comment
+::Manual.example "Impredicativity"
+:::
+::::Manual.example "非可述性"
 :::comment
 Proof irrelevance can be written as a proposition that quantifies over all propositions:
 :::

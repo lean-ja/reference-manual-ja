@@ -126,6 +126,7 @@
 | immediate value | 即値 | |
 | imperative | 命令型 | |
 | implicit parameter | 暗黙のパラメータ | |
+| impredicativity | 非可述性 | |
 | inaccessible | （仮定のアクセス可否の文脈で）アクセス不能 | |
 | incompatible | 互換性 | |
 | index, indices | 添字 | |
@@ -205,6 +206,7 @@
 | polymorphic | 多相 | |
 | precedence | 優先順位 | 構文解析・演算子等の優先具合を指す |
 | predicate | 述語 | |
+| predicativity | 可述性 | |
 | pretty printer | プリティプリンタ | |
 | primitive | プリミティブ | |
 | primitive recursion | 原始再帰 | |
@@ -331,7 +333,6 @@
 | cumulative | |
 | ellipsis | 他言語でも類似概念があるが、そちらでもそのまま英単語で表現されることが多そうだったため |
 | idiom bracket | https://wiki.haskell.org/Idiom_brackets |
-| impredicativity, predicativity | |
 | inhabited | |
 | no confusion | |
 | out, semi-out | |
