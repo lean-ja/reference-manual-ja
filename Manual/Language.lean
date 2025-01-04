@@ -332,7 +332,7 @@ The following data are tracked in section scopes:
 
 : セクション変数
 
-  {tech}[Section variables] は、定義のパラメータとして自動的に追加される名前（もしくは {tech}[インスタンス暗黙] のパラメータ）です。また、定理の文中に登場する場合は、全称量化された仮定として定理に追加されます。
+  {tech}[セクション変数] は、定義のパラメータとして自動的に追加される名前（もしくは {tech}[インスタンス暗黙] のパラメータ）です。また、定理の文中に登場する場合は、全称量化された仮定として定理に追加されます。
 
 :::comment
 ### Controlling Section Scopes
